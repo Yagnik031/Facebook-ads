@@ -7,4 +7,9 @@ export class FacebookAdsWeb extends WebPlugin implements FacebookAdsPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async createBanner(_options: any): Promise<boolean> {
+    console.log('create banner', _options);
+    return _options;
+  }
 }
